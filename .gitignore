@@ -1,0 +1,19 @@
+# Ignoriere automatisch erzeugte Dateien und temporäre Ordner
+__pycache__/
+*.pyc
+
+# Lokale Daten und Ausgabedateien
+/data/
+/output/
+/export/
+
+# Persönliche Umgebungsvariablen (z. B. API-Schlüssel)
+.env
+
+# Editor-spezifische Einstellungen
+.vscode/
+
+# Temporäre Dateien
+*.log
+*.tmp
+*.bak
