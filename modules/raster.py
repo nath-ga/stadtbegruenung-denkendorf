@@ -30,3 +30,11 @@ def erstelle_raster(grenze_gdf, rastergroesse=10):
     raster_gdf = gpd.GeoDataFrame(geometry=raster, crs=grenze.crs)
     raster_clip = gpd.overlay(raster_gdf, grenze, how="intersection")
     return raster_clip
+
+def berechne_freie_zellen(raster, ausschluss_union):
+    """
+    Entfernt alle Rasterzellen, die mit Ausschlussflächen überlappen.
+    Gibt nur die freien Zellen zurück.
+    """
+    raster["frei"] = ~raster.geometry.intersects(ausschluss_union)
+    return raster[raster["frei"]].copy()

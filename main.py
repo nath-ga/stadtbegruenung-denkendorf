@@ -9,6 +9,7 @@ from modules.visualizer import zeige_freie_zellen_karte
 from modules.osm_loader import lade_strassen
 from modules.eignung import bewertung_freier_zellen
 from modules.osm_loader import lade_strassen
+from modules.export import speichere_zellen
 
 def main():
     print("Starte Analyse für:", PLACE)

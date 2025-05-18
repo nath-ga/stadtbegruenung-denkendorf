@@ -7,7 +7,6 @@ import hashlib
 import unicodedata
 from config import AUSSCHLUSS_TAGS
 
-
 def ort_hash(place):
     """
     Gibt einen eindeutigen Hash für den Ort zur Dateibenennung zurück.
@@ -70,3 +69,17 @@ def lade_strassen(place):
         strassen.to_file(pfad_strassen, driver="GeoJSON")
 
     return strassen
+
+
+def lade_landuse_flaechen(place, cache_file="data/landuse.geojson"):
+    """
+    Lädt landuse-Flächen (z. B. residential, industrial, forest, grass) aus OpenStreetMap.
+    Nutzt lokalen Cache, wenn vorhanden.
+    """
+    if os.path.exists(cache_file):
+        return gpd.read_file(cache_file)
+
+    tags = {"landuse": True}
+    gdf = ox.features_from_place(place, tags=tags).to_crs(epsg=3857)
+    gdf.to_file(cache_file, driver="GeoJSON")
+    return gdf
