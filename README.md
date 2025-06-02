@@ -24,12 +24,14 @@ Modelltraining: Ein Entscheidungsbaum (DecisionTreeClassifier) lernt aus den Dat
 
 📊 Beispiel: Rasteranalyse mit Eignungsprüfung
 
-
+<p align="center">
+  <img src="karte.png" alt="Rasteranalyse Beispiel" width="600" />
+</p>
 
 Beispielhafte Darstellung eines analysierten Stadtbereichs mit geeigneten und ungeeigneten Rasterzellen.
 
 📁 Projektstruktur
-
+```text
 stadtbegruenung-ml/
 ├── main.py                 # Hauptprogramm zur Rasteranalyse
 ├── main_ml.py              # Separates ML-Trainingsskript
@@ -44,6 +46,7 @@ stadtbegruenung-ml/
 ├── ml_daten/               # Exportierte CSVs für ML-Modelle
 ├── modell_entwicklung.py   # Auswertung des ML-Modells
 └── karte.png               # Beispielhafte Karte (optional)
+```
 
 💡 Nächste Schritte
 
