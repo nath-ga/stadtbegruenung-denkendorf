@@ -31,9 +31,9 @@ Modelltraining: Ein Entscheidungsbaum (DecisionTreeClassifier) lernt aus den Dat
 Beispielhafte Darstellung eines analysierten Stadtbereichs mit geeigneten und ungeeigneten Rasterzellen.
 
 📁 Projektstruktur
-```text
+<p>
 stadtbegruenung-ml/
-├── main.py                 # Hauptprogramm zur Rasteranalyse
+├── main.py                 # Hauptprogramm zur Rasteranalyse\n
 ├── main_ml.py              # Separates ML-Trainingsskript
 ├── config.py               # Parameter (Ort, Schwellenwerte etc.)
 ├── modules/
@@ -46,7 +46,7 @@ stadtbegruenung-ml/
 ├── ml_daten/               # Exportierte CSVs für ML-Modelle
 ├── modell_entwicklung.py   # Auswertung des ML-Modells
 └── karte.png               # Beispielhafte Karte (optional)
-```
+</p>
 
 💡 Nächste Schritte
 
@@ -59,6 +59,18 @@ Vergleich verschiedener ML-Modelle
 👤 Autorin
 Nathalie G., Weiterbildung zur Machine Learning Spezialistin, mit besonderem Fokus auf Umweltanwendungen und nachhaltige Stadtentwicklung.
 📧 GitHub: nath-ga
+
+## Weiterentwicklung
+
+Dieses Projekt diente als erste Lernetappe im Umgang mit OpenStreetMap-Daten, Rasterlogik und einem einfachen Machine-Learning-Modell zur Stadtbegrünung.  
+Der Schwerpunkt lag auf dem technischen Aufbau: Datenabruf, Zellbewertung und Modellerstellung.
+
+**Stand: Juni 2025 – Projekt abgeschlossen.**
+
+Auf Basis dieser Erfahrungen wird ein neues Projekt gestartet, das gezielt von „grünen Vorbild-Städten“ lernen soll.  
+Das Ziel: eine realistischere Eignungsbewertung durch datengetriebene Analyse gut begrünter Orte.
+
+➡️ Der Link zum neuen Projekt folgt.
 
 
 
